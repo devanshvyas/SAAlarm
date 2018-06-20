@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B25FC720D91A780039A694 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B25FC620D91A780039A694 /* AddAlarmViewController.swift */; };
+		05B25FC920D920870039A694 /* AlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B25FC820D920870039A694 /* AlarmCell.swift */; };
+		05B25FCB20D924450039A694 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B25FCA20D924450039A694 /* TableView.swift */; };
+		05B25FCF20D9314A0039A694 /* SaveLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B25FCE20D9314A0039A694 /* SaveLoad.swift */; };
 		05C2149620D9105800A26419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2149520D9105800A26419 /* AppDelegate.swift */; };
-		05C2149820D9105800A26419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2149720D9105800A26419 /* ViewController.swift */; };
 		05C2149B20D9105800A26419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C2149920D9105800A26419 /* Main.storyboard */; };
 		05C2149E20D9105800A26419 /* SAAlarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05C2149C20D9105800A26419 /* SAAlarm.xcdatamodeld */; };
 		05C214A020D9105B00A26419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C2149F20D9105B00A26419 /* Assets.xcassets */; };
 		05C214A320D9105B00A26419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C214A120D9105B00A26419 /* LaunchScreen.storyboard */; };
+		05C214AF20D9130A00A26419 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C214AE20D9130A00A26419 /* MainViewController.swift */; };
+		05E88FC120DA2085003D3BE8 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E88FC020DA2085003D3BE8 /* Protocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05B25FC620D91A780039A694 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		05B25FC820D920870039A694 /* AlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCell.swift; sourceTree = "<group>"; };
+		05B25FCA20D924450039A694 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		05B25FCE20D9314A0039A694 /* SaveLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLoad.swift; sourceTree = "<group>"; };
 		05C2149220D9105800A26419 /* SAAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2149520D9105800A26419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05C2149720D9105800A26419 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05C2149A20D9105800A26419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05C2149D20D9105800A26419 /* SAAlarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SAAlarm.xcdatamodel; sourceTree = "<group>"; };
 		05C2149F20D9105B00A26419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05C214A220D9105B00A26419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05C214A420D9105B00A26419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C214AE20D9130A00A26419 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		05E88FC020DA2085003D3BE8 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		05C2149420D9105800A26419 /* SAAlarm */ = {
 			isa = PBXGroup;
 			children = (
-				05C2149520D9105800A26419 /* AppDelegate.swift */,
-				05C2149720D9105800A26419 /* ViewController.swift */,
-				05C2149920D9105800A26419 /* Main.storyboard */,
-				05C2149F20D9105B00A26419 /* Assets.xcassets */,
-				05C214A120D9105B00A26419 /* LaunchScreen.storyboard */,
+				05C214AA20D911A400A26419 /* Model */,
+				05C214AB20D911AA00A26419 /* View */,
+				05C214AC20D911B700A26419 /* Controller */,
+				05C214AD20D911C200A26419 /* Supporting Files */,
 				05C214A420D9105B00A26419 /* Info.plist */,
-				05C2149C20D9105800A26419 /* SAAlarm.xcdatamodeld */,
 			);
 			path = SAAlarm;
+			sourceTree = "<group>";
+		};
+		05C214AA20D911A400A26419 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05C2149C20D9105800A26419 /* SAAlarm.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05C214AB20D911AA00A26419 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05C2149920D9105800A26419 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05C214AC20D911B700A26419 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05C214AE20D9130A00A26419 /* MainViewController.swift */,
+				05B25FCA20D924450039A694 /* TableView.swift */,
+				05B25FC620D91A780039A694 /* AddAlarmViewController.swift */,
+				05B25FCE20D9314A0039A694 /* SaveLoad.swift */,
+				05B25FC820D920870039A694 /* AlarmCell.swift */,
+				05E88FC020DA2085003D3BE8 /* Protocol.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05C214AD20D911C200A26419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05C2149520D9105800A26419 /* AppDelegate.swift */,
+				05C214A120D9105B00A26419 /* LaunchScreen.storyboard */,
+				05C2149F20D9105B00A26419 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05C214A720D9105B00A26419 /* Build configuration list for PBXNativeTarget "SAAlarm" */;
 			buildPhases = (
+				DD04D13A88F961802B122CFE /* [CP] Check Pods Manifest.lock */,
 				05C2148E20D9105800A26419 /* Sources */,
 				05C2148F20D9105800A26419 /* Frameworks */,
 				05C2149020D9105800A26419 /* Resources */,
+				AA08EB94C38BAD3BDA21CA9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +182,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AA08EB94C38BAD3BDA21CA9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SAAlarm/Pods-SAAlarm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAAlarm/Pods-SAAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD04D13A88F961802B122CFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAAlarm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05C2148E20D9105800A26419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05C2149820D9105800A26419 /* ViewController.swift in Sources */,
+				05B25FCF20D9314A0039A694 /* SaveLoad.swift in Sources */,
+				05B25FC920D920870039A694 /* AlarmCell.swift in Sources */,
+				05B25FCB20D924450039A694 /* TableView.swift in Sources */,
+				05E88FC120DA2085003D3BE8 /* Protocol.swift in Sources */,
+				05B25FC720D91A780039A694 /* AddAlarmViewController.swift in Sources */,
+				05C214AF20D9130A00A26419 /* MainViewController.swift in Sources */,
 				05C2149E20D9105800A26419 /* SAAlarm.xcdatamodeld in Sources */,
 				05C2149620D9105800A26419 /* AppDelegate.swift in Sources */,
 			);
@@ -293,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.solutionanalysts.SAAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.solutionanalysts.SAAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
