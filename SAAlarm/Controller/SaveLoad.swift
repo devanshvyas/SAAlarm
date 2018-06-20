@@ -11,7 +11,7 @@ import CoreData
 
 class SaveLoad {
     
-    //MARK: Variables
+    //MARK: Variable and Singleton Object
     let Managedcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     static let shared = SaveLoad()
     

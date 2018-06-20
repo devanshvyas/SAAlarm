@@ -19,14 +19,13 @@ extension MainViewController : SwitchDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! AlarmCell
         cell.delegate = self
         cell.timeLabel.text = alarmArray[indexPath.row].alarmTime
-        alarmArray[indexPath.row].status == true ? cell.status.setOn(true, animated: true) : cell.status.setOn(false, animated: true)
+        cell.status.setOn(alarmArray[indexPath.row].status, animated: true)
         cell.detailLabel.text = alarmArray[indexPath.row].timeLabel
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let data = alarmArray[indexPath.row].alarmTime
-        performSegue(withIdentifier: "toAddAlarm", sender: data)
+        performSegue(withIdentifier: "toAddAlarm", sender: self)
     }
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
@@ -34,6 +33,7 @@ extension MainViewController : SwitchDelegate{
             self.obj.Managedcontext.delete(self.alarmArray[indexPath.row])
             self.alarmArray.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            self.obj.save()
         }
         return [delete]
     }
