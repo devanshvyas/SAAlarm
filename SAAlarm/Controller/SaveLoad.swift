@@ -37,4 +37,18 @@ class SaveLoad {
         }
         return timeArray!
     }
+    
+    //MARK: load for worldClock
+    func loadUTC() -> [WorldClock] {
+        let req : NSFetchRequest<WorldClock> = WorldClock.fetchRequest()
+        let timeArray : [WorldClock]?
+        do{
+            timeArray = try Managedcontext.fetch(req)
+        }
+        catch{
+            fatalError("Error while Loading")
+        }
+        return timeArray!
+    }
+    
 }

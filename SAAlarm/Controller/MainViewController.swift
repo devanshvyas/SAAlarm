@@ -31,13 +31,19 @@ class MainViewController: UITableViewController {
         performSegue(withIdentifier: "toAddAlarm", sender: self)
     }
     
-   
+    @IBAction func worldClockButton(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "toWorldClock", sender: self)
+    }
+    
+    
     //MARK: Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! AddAlarmViewController
-        if let index = tableView.indexPathForSelectedRow?.row{
-            destination.idx = index
-            destination.timeValue = alarmArray[index].alarmTime
+        if segue.identifier == "toAddAlarm"{
+            let destination = segue.destination as! AddAlarmViewController
+            if let index = tableView.indexPathForSelectedRow?.row{
+                destination.idx = index
+                destination.timeValue = alarmArray[index].alarmTime
+            }
         }
     }
 }

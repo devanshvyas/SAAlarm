@@ -47,10 +47,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let container = NSPersistentContainer(name: "SAAlarm")
         
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+        
+//        let psc = NSPersistentStoreCoordinator(managedObjectModel: mom)
+//        let options = [NSMigratePersistentStoresAutomaticallyOption: true, NSInferMappingModelAutomaticallyOption: true]
+//        do {
+//            try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: options)
+//        } catch {
+//            fatalError("Failed to add persistent store: \(error)")
+//        }
+        
         return container
     }()
 
